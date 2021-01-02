@@ -76,6 +76,22 @@ nav {
 	padding: 20px;
 }
 
+.projekt {
+	background-color: white;
+	width: 100px;
+	padding: 5px;
+	margin: 20px 0px;
+	border-radius: 5px;
+}
+
+.projekt a {
+	display: block;
+	color: black;
+	text-decoration: none;
+	text-align: center;
+
+}
+
 /*-------------------------- mobil menu ------------------------------------*/
 
 @media (max-width: 550px) {
@@ -106,10 +122,6 @@ nav {
 		transform-origin: top left;
 	}
 
-	.nav_links li {
-		/*		opacity: 0;*/
-	}
-
 	.burger {
 		display: block;
 		font-size: 35px;
@@ -119,3 +131,5 @@ nav {
 .nav_active {
 	transform: translateX(0%);
 }
+
+/*-------------------------- tablet version ------------------------------------*/
