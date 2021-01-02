@@ -71,6 +71,7 @@ nav {
 
 .om_section {
 	padding: 20px;
+	background-color: #ffe4ce;
 }
 
 /*-------------------------- portfolie ------------------------------------*/
@@ -98,6 +99,22 @@ nav {
 	text-decoration: none;
 	text-align: center;
 
+}
+
+.portfolie_section1 {
+	background-color: #e1d6f7;
+}
+
+.portfolie_section2 {
+	background-color: #ffe4ce;
+}
+
+.portfolie_section3 {
+	background-color: #c6d9f4;
+}
+
+.portfolie_section4 {
+	background-color: #ffe3e7;
 }
 
 /*-------------------------- mobil menu ------------------------------------*/
