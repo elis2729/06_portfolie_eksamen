@@ -23,6 +23,11 @@ section {
 	margin: auto;
 }
 
+p {
+	line-height: 1.5;
+	padding-top: 10px;
+}
+
 /*-------------------------- menu ------------------------------------*/
 
 .logo {
