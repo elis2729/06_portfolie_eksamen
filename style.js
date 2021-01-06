@@ -3,6 +3,8 @@ window.addEventListener("load", sidenVises)
 function sidenVises() {
 	console.log("sidenVises");
 	document.querySelector(".burger").addEventListener("click", toggleMenu)
+
+//	document.querySelector("#sky_op").classList.add("movement")
 }
 
 function toggleMenu() {

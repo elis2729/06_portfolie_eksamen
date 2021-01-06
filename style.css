@@ -16,9 +16,6 @@ img {
 }
 
 section {
-	background-color: #e5e5e5;
-	width: 100%;
-	height: 100%;
 	max-width: 1200px;
 	margin: auto;
 }
@@ -48,6 +45,7 @@ nav {
 	justify-content: space-around;
 	width: 25rem;
 	background-color: white;
+	z-index: 1;
 }
 
 .nav_links li {
@@ -68,8 +66,121 @@ nav {
 
 /*-------------------------- forside ------------------------------------*/
 
-.forside_section {
-	height: 80vh;
+
+wrapper {
+	position: relative;
+}
+
+#sky_midt {
+	background-image: url(img/sky_midt.svg);
+	background-size: contain;
+	position: absolute;
+	top: 25vw;
+	right: 0;
+	width: 14vw;
+	height: 11vw;
+
+}
+
+#forgrund {
+	background-image: url(img/forside_forgrund.PNG);
+	background-size: contain;
+	width: 88vw;
+	height: 44.6vw;
+	position: absolute;
+	top: 135px;
+	left: 6vw;
+	pointer-events: none;
+}
+
+#sky_ned {
+	background-image: url(img/sky_ned.svg);
+	background-size: contain;
+	position: absolute;
+	top: 40vw;
+	right: 0;
+	width: 19vw;
+	height: 11vw;
+}
+
+#mellemgrund {
+	background-image: url(img/forside_mellemgrund.PNG);
+	background-size: contain;
+	width: 88vw;
+	height: 44.6vw;
+	position: absolute;
+	top: 135px;
+	left: 6vw;
+	pointer-events: none;
+}
+
+#sky_op {
+	background-image: url(img/sky_op.svg);
+	background-size: contain;
+	position: absolute;
+	top: 15vw;
+	right: 0;
+	width: 18vw;
+	height: 10vw;
+}
+
+#baggrund {
+	background-image: url(img/forside_baggrund.JPG);
+	background-size: contain;
+	width: 88vw;
+	height: 44.6vw;
+	position: absolute;
+	top: 135px;
+	left: 6vw;
+	pointer-events: none;
+}
+
+#hide1 {
+	background-image: url(img/hide.svg);
+	background-size: contain;
+	position: absolute;
+	top: 135px;
+	left: 0;
+	width: 6vw;
+	height: 45vw;
+
+}
+
+#hide2 {
+	background-image: url(img/hide.svg);
+	background-size: contain;
+	position: absolute;
+	top: 135px;
+	right: 0;
+	width: 6vw;
+	height: 45vw;
+}
+
+.grene {
+	position: absolute;
+	bottom: -0;
+	left: 0;
+	pointer-events: none;
+}
+
+/*-------------------------- animation ------------------------------------*/
+
+.movement {
+	animation-name: movement_kf;
+	animation-duration: 25s;
+	animation-iteration-count: infinite;
+	animation-direction: normal;
+	animation-timing-function: linear;
+}
+
+@keyframes movement_kf {
+	0% {
+		transform: translateX(0vw);
+	}
+
+	100% {
+		transform: translateX(-120vw);
+	}
 }
 
 /*-------------------------- om ------------------------------------*/
