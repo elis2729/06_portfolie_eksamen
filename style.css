@@ -79,6 +79,7 @@ wrapper {
 	right: 0;
 	width: 14vw;
 	height: 11vw;
+	opacity: 0%;
 
 }
 
@@ -101,6 +102,7 @@ wrapper {
 	right: 0;
 	width: 19vw;
 	height: 11vw;
+	opacity: 0%;
 }
 
 #mellemgrund {
@@ -122,6 +124,18 @@ wrapper {
 	right: 0;
 	width: 18vw;
 	height: 10vw;
+	opacity: 0%;
+}
+
+#sky_top {
+	background-image: url(img/sky_top.svg);
+	background-size: contain;
+	position: absolute;
+	top: 10vw;
+	right: 0;
+	width: 16vw;
+	height: 10vw;
+	opacity: 0%;
 }
 
 #baggrund {
@@ -165,21 +179,106 @@ wrapper {
 
 /*-------------------------- animation ------------------------------------*/
 
-.movement {
-	animation-name: movement_kf;
-	animation-duration: 25s;
+.movement_top {
+	animation-name: top_kf;
+	animation-duration: 42s;
+	animation-iteration-count: infinite;
+	animation-direction: normal;
+	animation-timing-function: linear;
+	animation-delay: 12s;
+}
+
+@keyframes top_kf {
+	0% {
+		opacity: 0%;
+		transform: translateX(0vw);
+	}
+
+	5% {
+		opacity: 100%;
+		transform: translateX(-5vw);
+	}
+
+	100% {
+		opacity: 100%;
+		transform: translateX(-115vw);
+	}
+}
+
+.movement_op {
+	animation-name: op_kf;
+	animation-duration: 30s;
 	animation-iteration-count: infinite;
 	animation-direction: normal;
 	animation-timing-function: linear;
 }
 
-@keyframes movement_kf {
+@keyframes op_kf {
 	0% {
+		opacity: 0%;
 		transform: translateX(0vw);
 	}
 
+	5% {
+		opacity: 100%;
+		transform: translateX(-5vw);
+	}
+
 	100% {
-		transform: translateX(-120vw);
+		opacity: 100%;
+		transform: translateX(-115vw);
+	}
+}
+
+.movement_midt {
+	animation-name: midt_kf;
+	animation-duration: 50s;
+	animation-iteration-count: infinite;
+	animation-direction: normal;
+	animation-timing-function: linear;
+	animation-delay: 8s;
+}
+
+@keyframes midt_kf {
+	0% {
+		opacity: 0%;
+		transform: translateX(0vw);
+	}
+
+	5% {
+		opacity: 100%;
+		transform: translateX(-5vw);
+	}
+
+	100% {
+		opacity: 100%;
+		transform: translateX(-115vw);
+	}
+}
+
+.movement_ned {
+	animation-name: ned_kf;
+	animation-duration: 60s;
+	animation-iteration-count: infinite;
+	animation-direction: normal;
+	animation-timing-function: linear;
+	animation-delay: 18s;
+}
+
+@keyframes ned_kf {
+	0% {
+		opacity: 0%;
+		transform: translateX(0vw);
+	}
+
+	5% {
+		opacity: 100%;
+		transform: translateX(-5vw);
+	}
+
+	100% {
+		opacity: 100%;
+		transform: translateX(-115vw);
 	}
 }
 

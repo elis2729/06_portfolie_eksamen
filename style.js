@@ -4,7 +4,10 @@ function sidenVises() {
 	console.log("sidenVises");
 	document.querySelector(".burger").addEventListener("click", toggleMenu)
 
-//	document.querySelector("#sky_op").classList.add("movement")
+	document.querySelector("#sky_op").classList.add("movement_op")
+	document.querySelector("#sky_midt").classList.add("movement_midt")
+	document.querySelector("#sky_ned").classList.add("movement_ned")
+	document.querySelector("#sky_top").classList.add("movement_top")
 }
 
 function toggleMenu() {
