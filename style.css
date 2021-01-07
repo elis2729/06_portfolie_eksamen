@@ -66,11 +66,6 @@ nav {
 
 /*-------------------------- forside ------------------------------------*/
 
-
-wrapper {
-	position: relative;
-}
-
 #sky_midt {
 	background-image: url(img/sky_midt.svg);
 	background-size: contain;
@@ -287,6 +282,17 @@ wrapper {
 .om_section {
 	padding: 20px;
 	background-color: #ffe4ce;
+}
+
+#due1 {
+	background-image: url(img/pigeon1.PNG);
+	background-size: contain;
+	width: 101vw;
+	height: 56.8vw;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	pointer-events: none;
 }
 
 /*-------------------------- portfolie ------------------------------------*/
