@@ -168,7 +168,7 @@ nav {
 .grene {
 	position: absolute;
 	bottom: -0;
-	left: 0;
+	right: 0;
 	pointer-events: none;
 }
 
@@ -284,15 +284,36 @@ nav {
 	background-color: #ffe4ce;
 }
 
-#due1 {
-	background-image: url(img/pigeon1.PNG);
+#due {
+	background-image: url(img/due.gif);
 	background-size: contain;
-	width: 101vw;
-	height: 56.8vw;
+	width: 9vw;
+	height: 14vw;
 	position: absolute;
-	bottom: 0;
+	bottom: 4vw;
+	right: 19vw;
+}
+
+.due_click {
+	background-image: url(img/due3.svg);
+	background-size: contain;
+	width: 14.5vw;
+	height: 14vw;
+	position: absolute;
+	bottom: 4.3vw;
+	right: 17.8vw;
+}
+
+.gren {
+	position: absolute;
+	bottom: -0;
 	right: 0;
 	pointer-events: none;
+	width: 45vw;
+}
+
+.hidden {
+	visibility: hidden;
 }
 
 /*-------------------------- portfolie ------------------------------------*/

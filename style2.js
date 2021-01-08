@@ -4,12 +4,20 @@ function sidenVises() {
 	console.log("sidenVises");
 	document.querySelector(".burger").addEventListener("click", toggleMenu)
 
-	document.querySelector("#sky_op").classList.add("movement_op")
-	document.querySelector("#sky_midt").classList.add("movement_midt")
-	document.querySelector("#sky_ned").classList.add("movement_ned")
-	document.querySelector("#sky_top").classList.add("movement_top")
+	document.querySelector("#due").addEventListener("click", due)
 }
 
+function due() {
+	console.log("due")
+	document.querySelector("#due").removeEventListener("click", due)
+	document.querySelector(".due_click").classList.remove("hidden")
+	setTimeout(stop, 400)
+}
+
+function stop() {
+	console.log("stop")
+	document.querySelector(".due_click").classList.add("hidden")
+}
 
 function toggleMenu() {
 	console.log("toggleMenu")
