@@ -6,10 +6,6 @@
 	font-family: arial, sans-serif;
 }
 
-body {
-	margin: 0 auto;
-}
-
 img {
 	max-width: 100%;
 	height: auto;
@@ -66,14 +62,15 @@ nav {
 
 /*-------------------------- forside ------------------------------------*/
 
+
 #sky_midt {
 	background-image: url(img/sky_midt.svg);
 	background-size: contain;
 	position: absolute;
-	top: 25vw;
+	top: 86vw;
 	right: 0;
-	width: 14vw;
-	height: 11vw;
+	width: 30vw;
+	height: 23vw;
 	opacity: 0%;
 
 }
@@ -81,11 +78,11 @@ nav {
 #forgrund {
 	background-image: url(img/forside_forgrund.PNG);
 	background-size: contain;
-	width: 88vw;
-	height: 44.6vw;
+	width: 250vw;
+	height: 126.6vw;
 	position: absolute;
-	top: 135px;
-	left: 6vw;
+	top: 105px;
+	left: -75vw;
 	pointer-events: none;
 }
 
@@ -93,21 +90,21 @@ nav {
 	background-image: url(img/sky_ned.svg);
 	background-size: contain;
 	position: absolute;
-	top: 40vw;
+	top: 120vw;
 	right: 0;
-	width: 19vw;
-	height: 11vw;
+	width: 36vw;
+	height: 21vw;
 	opacity: 0%;
 }
 
 #mellemgrund {
 	background-image: url(img/forside_mellemgrund.PNG);
 	background-size: contain;
-	width: 88vw;
-	height: 44.6vw;
+	width: 250vw;
+	height: 126.6vw;
 	position: absolute;
-	top: 135px;
-	left: 6vw;
+	top: 105px;
+	left: -75vw;
 	pointer-events: none;
 }
 
@@ -115,10 +112,10 @@ nav {
 	background-image: url(img/sky_op.svg);
 	background-size: contain;
 	position: absolute;
-	top: 15vw;
+	top: 50vw;
 	right: 0;
-	width: 18vw;
-	height: 10vw;
+	width: 32vw;
+	height: 17vw;
 	opacity: 0%;
 }
 
@@ -126,43 +123,22 @@ nav {
 	background-image: url(img/sky_top.svg);
 	background-size: contain;
 	position: absolute;
-	top: 10vw;
+	top: 33vw;
 	right: 0;
-	width: 16vw;
-	height: 10vw;
+	width: 27vw;
+	height: 17vw;
 	opacity: 0%;
 }
 
 #baggrund {
 	background-image: url(img/forside_baggrund.JPG);
 	background-size: contain;
-	width: 88vw;
-	height: 44.6vw;
+	width: 250vw;
+	height: 126.6vw;
 	position: absolute;
-	top: 135px;
-	left: 6vw;
+	top: 105px;
+	left: -75vw;
 	pointer-events: none;
-}
-
-#hide1 {
-	background-image: url(img/hide.svg);
-	background-size: contain;
-	position: absolute;
-	top: 135px;
-	left: 0;
-	width: 6vw;
-	height: 45vw;
-
-}
-
-#hide2 {
-	background-image: url(img/hide.svg);
-	background-size: contain;
-	position: absolute;
-	top: 135px;
-	right: 0;
-	width: 6vw;
-	height: 45vw;
 }
 
 .grene {
@@ -170,6 +146,7 @@ nav {
 	bottom: -0;
 	right: 0;
 	pointer-events: none;
+	max-width: 986px;
 }
 
 /*-------------------------- animation ------------------------------------*/
@@ -280,41 +257,15 @@ nav {
 /*-------------------------- om ------------------------------------*/
 
 .om_section {
-	padding: 20px;
+	padding: 30px;
 	background-color: #ffe4ce;
 }
 
-#due {
-	background-image: url(img/due.gif);
-	background-size: contain;
-	width: 9vw;
-	height: 14vw;
-	position: absolute;
-	bottom: 4vw;
-	right: 19vw;
-}
-
-.due_click {
-	background-image: url(img/due3.svg);
-	background-size: contain;
-	width: 14.5vw;
-	height: 14vw;
-	position: absolute;
-	bottom: 4.3vw;
-	right: 17.8vw;
-}
-
 .gren {
-	position: absolute;
-	bottom: -0;
-	right: 0;
-	pointer-events: none;
-	width: 45vw;
+	width: 0;
 }
 
-.hidden {
-	visibility: hidden;
-}
+
 
 /*-------------------------- portfolie ------------------------------------*/
 
@@ -324,7 +275,7 @@ nav {
 .portfolie_section4 {
 	margin-bottom: 20px;
 	height: 100%;
-	padding: 20px;
+	padding: 30px;
 }
 
 .projekt {
@@ -359,7 +310,7 @@ nav {
 	background-color: #ffe3e7;
 }
 
-/*-------------------------- mobil menu ------------------------------------*/
+/*---------------------------------------------------------- mobil menu -------------------------------------------------------------*/
 
 @media (max-width: 550px) {
 	header {
@@ -374,22 +325,6 @@ nav {
 	body {
 		overflow-x: hidden;
 	}
-
-	/*
-	.nav_links {
-		position: absolute;
-		right: 0;
-		height: 20rem;
-		top: 7rem;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		width: 100%;
-		transform: translateX(100%);
-		transition: transform 0.3s;
-		transform-origin: top left;
-	}
-*/
 
 	.nav_links {
 		position: absolute;
@@ -416,9 +351,154 @@ nav {
 	transform: translateX(0%);
 }
 
-/*-------------------------- tablet version ------------------------------------*/
+/*-----------------------------------------------------tablet version-------------------------------------------------------*/
+
+@media (min-width: 550px) {
+
+	/*-----------------portfolie---------------*/
+	.portfolie_section1,
+	.portfolie_section2,
+	.portfolie_section3,
+	.portfolie_section4 {
+		padding: 50px;
+	}
+
+
+
+	/*-------------------om--------------------*/
+
+	#due {
+		background-image: url(img/due.gif);
+		background-size: contain;
+		width: 9vw;
+		height: 14vw;
+		position: absolute;
+		bottom: -36vw;
+		right: 19vw;
+	}
+
+	.due_click {
+		background-image: url(img/due3.svg);
+		background-size: contain;
+		width: 14.5vw;
+		height: 14vw;
+		position: absolute;
+		bottom: -35.9vw;
+		right: 17.8vw;
+	}
+
+	.gren {
+		position: absolute;
+		bottom: -40vw;
+		right: 0;
+		pointer-events: none;
+		width: 45vw;
+	}
+
+	.hidden {
+		visibility: hidden;
+	}
+
+	.om_section {
+		padding: 50px;
+	}
+
+	/*---------------- forside ----------------------*/
+
+	#sky_midt {
+		top: 39vw;
+		right: 0;
+		width: 14vw;
+		height: 11vw;
+	}
+
+	#forgrund {
+		width: 88vw;
+		height: 44.6vw;
+		top: 135px;
+		left: 6vw;
+	}
+
+	#sky_ned {
+		top: 51vw;
+		right: 0;
+		width: 19vw;
+		height: 11vw;
+	}
+
+	#mellemgrund {
+		width: 88vw;
+		height: 44.6vw;
+		top: 135px;
+		left: 6vw;
+	}
+
+	#sky_op {
+		top: 29vw;
+		right: 0;
+		width: 18vw;
+		height: 10vw;
+	}
+
+	#sky_top {
+		top: 24vw;
+		right: 0;
+		width: 16vw;
+		height: 10vw;
+	}
+
+	#baggrund {
+		width: 88vw;
+		height: 44.6vw;
+		top: 135px;
+		left: 6vw;
+	}
+
+	#hide1 {
+		top: 135px;
+		left: 0;
+		width: 6vw;
+		height: 45vw;
+
+	}
+
+	#hide2 {
+		top: 135px;
+		right: 0;
+		width: 6vw;
+		height: 45vw;
+	}
+
+	.grene {
+		bottom: -0;
+		right: 0;
+		max-width: 100%;
+	}
+
+}
+
+/*-------------------------------------------------- desktop version ------------------------------------*/
 
 @media (min-width: 800px) {
+
+	/*-------------------------- om ------------------------------------*/
+
+	#due {
+		;
+		bottom: 4vw;
+		right: 19vw;
+	}
+
+	.due_click {
+		bottom: 4.1vw;
+		right: 17.8vw;
+	}
+
+	.gren {
+		bottom: -0;
+		right: 0;
+	}
+
 	.om_section {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
@@ -430,13 +510,14 @@ nav {
 		margin-left: 30px;
 	}
 
+	/*-----------nav------------*/
+
+
 	nav {
 		padding-bottom: 15px;
 	}
 
-	.forside_section {
-		height: 75vh;
-	}
+	/*------------portfolie---------------*/
 
 	.portfolie_section1,
 	.portfolie_section2,
@@ -461,6 +542,24 @@ nav {
 		grid-column: 2/3;
 		grid-row: 1/2;
 		margin-left: 30px;
+	}
+
+	/*--------------forside-----------*/
+
+	#sky_midt {
+		top: 30vw;
+	}
+
+	#sky_ned {
+		top: 40vw;
+	}
+
+	#sky_op {
+		top: 20vw;
+	}
+
+	#sky_top {
+		top: 15vw;
 	}
 
 
