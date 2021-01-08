@@ -17,6 +17,7 @@ function due() {
 function stop() {
 	console.log("stop")
 	document.querySelector(".due_click").classList.add("hidden")
+	sidenVises();
 }
 
 function toggleMenu() {
