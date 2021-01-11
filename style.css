@@ -381,11 +381,11 @@ nav {
 	.due_click {
 		background-image: url(img/due3.svg);
 		background-size: contain;
-		width: 14.5vw;
+		width: 12.5vw;
 		height: 14vw;
 		position: absolute;
 		bottom: -35.9vw;
-		right: 17.8vw;
+		right: 18.6vw;
 	}
 
 	.gren {
@@ -498,7 +498,7 @@ nav {
 
 	.due_click {
 		bottom: 4.1vw;
-		right: 17.8vw;
+		right: 18.6vw;
 	}
 
 	.gren {
