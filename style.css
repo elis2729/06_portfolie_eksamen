@@ -375,6 +375,7 @@ nav {
 		position: absolute;
 		bottom: -36vw;
 		right: 19vw;
+		cursor: pointer;
 	}
 
 	.due_click {
@@ -455,6 +456,9 @@ nav {
 	}
 
 	#hide1 {
+		background-image: url(img/hide.svg);
+		background-size: contain;
+		position: absolute;
 		top: 135px;
 		left: 0;
 		width: 6vw;
@@ -463,6 +467,9 @@ nav {
 	}
 
 	#hide2 {
+		background-image: url(img/hide.svg);
+		background-size: contain;
+		position: absolute;
 		top: 135px;
 		right: 0;
 		width: 6vw;
