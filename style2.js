@@ -9,6 +9,10 @@ function sidenVises() {
 
 function due() {
 	console.log("due")
+
+	document.querySelector("#due_lyd").currentTime = 0;
+	document.querySelector("#due_lyd").play();
+
 	document.querySelector("#due").removeEventListener("click", due)
 	document.querySelector(".due_click").classList.remove("hidden")
 	setTimeout(stop, 400)
